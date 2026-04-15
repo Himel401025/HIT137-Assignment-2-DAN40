@@ -1,0 +1,30 @@
+3 @ 5
+ERROR
+ERROR
+ERROR
+
+(2 + 3) * 4
+(* (+ 2 3) 4)
+[LPAREN:(] [NUM:2] [OP:+] [NUM:3] [RPAREN:)] [OP:*] [NUM:4] [END]
+20
+
+-5
+(neg 5)
+[OP:-] [NUM:5] [END]
+-5
+
+3 * -2
+(* 3 (neg 2))
+[NUM:3] [OP:*] [OP:-] [NUM:2] [END]
+-6
+
+3(4+5)
+(* 3 (+ 4 5))
+[NUM:3] [LPAREN:(] [NUM:4] [OP:+] [NUM:5] [RPAREN:)] [END]
+27
+
+3 @ 5
+ERROR
+ERROR
+ERROR
+
